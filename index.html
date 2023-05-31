@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- <!DOCTYPE html> 문서가 html문서라는 것을 명시해놓음. 필수로 들어가야하는 태그이다. -->
+<html lang="en"> <!-- <html> 태그 ; <head> 태그와 <body> 태그를 써넣는 곳. 필수로 들어가야하는 태그이다. -->
+<head> <!-- <head> 태그 ; html문서의 설정 및 추가 파일을 불러오는 곳.  필수로 들어가야하는 태그이다. -->
+
+  <!-- 문자열 인코딩 방식을 UTF-8로 설정한다. 없으면 한글이 깨질 수 있으므로 꼭 써넣어야된다. -->
+  <meta charset="UTF-8">
+
+  <!-- 반응형 웹페이지를 만들 때와 이제는 고인이 되어버린 인터넷익스플로러(IE)의 호환성을 위한 태그 / 지금은 신경 안써도 됨 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <title> 태그 ; 웹페이지의 제목을 나타낸다. 브라우저 탭에 표시됨. -->
+  <title>Document</title>
+
+  <!-- jQuery cdn ; 자바스크립트(JS)를 조금 더 쉽게 사용할 수 있게 도와주는 JS 라이브러리 -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/weather-icons.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body> <!-- <body> 태그 ; 실제 화면에 보이는 태그를 넣는 영역이다. 필수로 들어가야하는 태그이다. -->
+  <div class="container">
+    <div class="weather-container">
+      <div class="weather">
+        <div class="top">
+          <div class="icon-container">
+            <div class="icon">
+              <i class="wi wi-day-sunny"></i>
+            </div>
+          </div>
+          <div class="temp">
+            <span class="t1h">loading</span><span>℃</span>
+          </div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <!-- <script> 태그 ; 자바스크립트를 쓰기위해 사용하는 태그이다. 태그 내부에 코드를 쓰거나 src속성을 이용해 js파일을 불러와서 사용할 수 있다. -->
+  <script src="weather.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
